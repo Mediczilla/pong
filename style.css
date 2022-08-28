@@ -1,3 +1,53 @@
-h1{
-    color: blueviolet;
+body{
+    background-color: rgb(0, 0, 0);
 }
+#pong_hypo{
+    background-color: white;
+    color: white;
+    width: 900px;
+    height: 475px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.vertical_line{
+    border-left: 6px dashed rgb(0, 0, 0);
+    height: 700px;
+    position:fixed;
+    left: 50%;
+    top: 5%;   
+}
+.ping_title{
+    color: white;
+    float: left;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 3.5em;
+    margin: 10%;
+    margin-left: 5%;
+}
+.pong_title{
+    color: rgb(255, 255, 255);
+    float: right;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 3.5em;
+    margin: 11%;
+    margin-right: 3%;
+}
+#player{
+    color: rgb(77, 249, 3);
+    text-align: left;
+    font-size: 3em;
+    margin: -5%;
+    padding-top: 0%;
+}
+#computer{
+    color: rgb(77, 249, 3);
+    font-size: 3em;
+    text-align: right;
+}
+
+
+
