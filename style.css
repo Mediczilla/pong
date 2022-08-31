@@ -1,8 +1,8 @@
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(45, 24, 67);
 }
-#pong_hypo{
-    background-color: white;
+#pong_box{
+    background-color: rgb(170, 35, 150);
     color: white;
     width: 900px;
     height: 475px;
@@ -11,15 +11,15 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.vertical_line{
-    border-left: 6px dashed rgb(0, 0, 0);
+#vertical_line{
+    border-left: 6px dashed rgb(45, 24, 67);
     height: 700px;
     position:fixed;
     left: 50%;
     top: 5%;   
 }
-.ping_title{
-    color: white;
+#ping_title{
+    color: rgb(0, 255, 110);
     float: left;
     writing-mode: vertical-lr;
     text-orientation: upright;
@@ -27,8 +27,8 @@ body{
     margin: 10%;
     margin-left: 5%;
 }
-.pong_title{
-    color: rgb(255, 255, 255);
+#pong_title{
+    color: rgb(0, 255, 110);
     float: right;
     writing-mode: vertical-lr;
     text-orientation: upright;
@@ -37,17 +37,53 @@ body{
     margin-right: 3%;
 }
 #player{
-    color: rgb(77, 249, 3);
+    color: rgb(79, 172, 243);
     text-align: left;
     font-size: 3em;
     margin: -5%;
     padding-top: 0%;
 }
 #computer{
-    color: rgb(77, 249, 3);
+    color: rgb(79, 172, 243);
     font-size: 3em;
     text-align: right;
 }
+#left_paddle{
+    --position: 50;
+    position: absolute;
+    background-color: rgb(232, 220, 0);
+    top: calc(var(--position) * 1vh);
+    transform: translateY(-50%);
+    width: 1.5vh;
+    height: 15vh;
+    left: 14.9%;
+}
+#right_paddle{
+    --position: 50;
+    position: absolute;
+    background-color: rgb(232, 220, 0);
+    top: calc(var(--position) * 1vh);
+    transform: translateY(-50%);
+    width: 1.5vh;
+    height: 15vh;
+    right: 14.9%;
+}
+#ball{
+    --x: 50;
+    --y: 50;
+    position: absolute;
+    background-color: rgb(232, 220, 0);
+    left: calc(var(--x) * 1vw);
+    top: calc(var(--y) * 1vh);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.5vh;
+    height: 2.5vh;
+}
+
+
+
+
 
 
 
